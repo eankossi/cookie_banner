@@ -2,7 +2,7 @@ function style () {
 	var _link = document.createElement('link');
 	_link.rel = 'stylesheet';
 	_link.type = 'text/css';
-	_link.href = 'style.css';
+	_link.href = 'https://cdn.statically.io/gh/eankossi/cookie_banner/main/style.css';
 	document.head.appendChild(_link);
 }
 
