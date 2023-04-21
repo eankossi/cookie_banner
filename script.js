@@ -152,15 +152,15 @@ function consentNoCookie() {
 }
 
 
-window.onload = function () {
-	var myCookie = getCookie('ms-consent');
-	console.log(myCookie);
-	if (myCookie == null) {
-		consentNoCookie();
-		style();
-		icons();
+var myCookie = getCookie('ms-consent');
+console.log(myCookie);
+if (myCookie == null) {
+	consentNoCookie();
+	style();
+	icons();
+	window.onload = function() {
 		html();
-	} else {
-		gtagConsent('default');
 	}
+} else {
+	gtagConsent('default');
 }
